@@ -1,6 +1,6 @@
 import streamlit as st
 import joblib
-model = joblib.load('Twitter')
+model = joblib.load('Twitterreviewclassifier')
 st.title('Twitter Reviews Classifier')
 ip = st.text_input('Enter your Tweet')
 op = model.predict([ip])
